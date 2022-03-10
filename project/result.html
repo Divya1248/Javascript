@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>result</title>
+    <link rel="stylesheet" href="/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <script src="https://cdn.anychart.com/js/8.0.1/anychart-core.min.js"></script>
+<script src="https://cdn.anychart.com/js/8.0.1/anychart-pie.min.js"></script>
+<script>
+    
+
+anychart.onDocumentReady(function() {
+
+/* // set the data */
+var data = [
+    {x: "green", value: 10},
+    {x: "red", value: 5}
+    // {x: "American Indian and Alaska Native", value: 2932248},
+    // {x: "Asian", value: 14674252},
+    // {x: "Native Hawaiian and Other Pacific Islander", value: 540013},
+    // {x: "Some Other Race", value: 19107368},
+    // {x: "Two or More Races", value: 9009073}
+];
+
+/* 
+ create the chart */
+var chart = anychart.pie();
+/* 
+// set the chart title */
+chart.title("Results for quiz");
+/* 
+// add the data */
+chart.data(data);
+/* 
+// display the chart in the container */
+chart.container('container');
+chart.draw();
+
+});
+
+
+</script>
+</head>
+<body>
+    <!-- <div class="card" style="width: 35 rem ;">
+        <div class="row">
+    <div class="card-body">
+        <h5 class="card-title">Nature</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    
+    <div class="card" style="width: 18rem;">
+     <input type=text name="name" value="fullname">
+     <input tyep=password name="password" value="read password">
+    </div>
+    <div class="card" style="width: 18rem;">
+        <div id="container"></div> 
+
+    </div>0
+  </div>
+</div>
+
+<script src="./pro.js"></script> -->
+<div id="container"></div> 
+
+</body>
+</html>00

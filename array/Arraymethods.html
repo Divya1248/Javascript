@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array methods</title>
+    <script>
+ var hobbies=["cycling", "swimming", "cooking", "dancing","drinking","walking","travelling","driving"];
+
+// to check array length
+console.log("array length is", hobbies.length);
+
+//to add elements to last index
+hobbies.push("sleeping","cricket");
+console.log("after pushing the elements to array is", hobbies);
+
+//to remove elements for last index
+console.log(hobbies.pop("travelling"));
+console.log("after poping elements from array is", hobbies);
+
+// //to add elements to first index
+console.log(hobbies.unshift('painting','dancing'));
+console.log("hobbies after unshifting ", hobbies);
+
+//to remove the elements from first index
+hobbies.shift();
+console.log('hobbies after shifting', hobbies)
+
+//to check if it is an array or not
+var ishobbiesArray=Array.isArray(hobbies);
+console.log("hobbies is an array", ishobbiesArray);
+
+//to check whether the elements is from an array
+var hasReading=hobbies.includes("cooking");
+console.log("hobbies has cooking in it", hasReading);
+
+var isReadingFrom=hobbies.includes("cooking",4);
+console.log("cooking is from the index", isReadingFrom);
+
+
+//IndexOf = to search for particular element
+var indexOfelement = hobbies.indexOf('swimming')
+console.log("swimming belongs to", indexOfelement);
+
+//Join operator= to join the array elements
+var elementsjoined=hobbies.join("+++");
+console.log("After joining the array elements",elementsjoined);
+
+//to modify the array elements
+//syntax splice(start count, delete count, adding items)
+//note: the original array will be changed
+var aftersplice=hobbies.splice(2,3,'skipping');
+console.log("splice values are", aftersplice);
+console.log("after splicing the hobbies is", hobbies);
+
+// to create
+//the slice() methods returns the selected elements in an array
+//as a new array object. the slice() method selects the element starting at the given start argument, and ends at but does not include,
+// the given end argument . 
+//Note: the original array will not be changed
+ //slice is used for 
+ var afterslicing = hobbies.slice(2,4);
+ console.log("sliced elements are", afterslicing);
+ console.log("after slicing", hobbies);
+
+</script>
+</head>
+<body>
+   <h2>check for the array methods in console</h2> 
+</body>
+</html>
